@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Cost/Profit Analysis Form">
+    <meta name="author" content="Wilson Shean">
+    <link rel="stylesheet" href="ProfitAnalysisForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Product Cost / Profit Analysis Form</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a title="Product Cost list" href="/Product Cost List/ProductCostList.html" id="page_cost"
+                        class="page-group-1">Product Cost list</a>
+            <a title="Profit Analysis Form" href="/Product Analysis/ProfitAnalysisForm.html" id="page_analysis"
+                        class="page-group-1">Profit Analysis Form</a>
+            <a title="Product Sample Sending list"
+                        href="/Product Sample Sending list/ProductSampleSendinglist.html" id="page_sample"
+                        class="page-group-1">Product Sample Sending list</a>
+            <a title="Product Purchase Record" href="/Product Purchase Record/ProductPurchaseRecord.html"
+                        id="page_order" class="page-group-1">Product Purchase Record</a>
+        </nav>
+    </header>
+    <div class="app">
+        <hr>
+        <div class="box">
+            <h1 id="Heading"><strong>Product Cost / Profit Analysis Form</strong></h1>
+        </div>
+        <div>
+            <table>
+                <div>
+                    <tr>
+                        <th>Product Item</th>
+                        <th>Product Code</th>
+                        <th>Specification</th>
+                        <th>Quantity</th>
+                        <th>Selling Price(USD)</th>
+                        <th>Material Cost(USD)</th>
+                        <th>Freight Cost(USD)</th>
+                        <th>Commission Cost(USD)</th>
+                    </tr>
+                </div>
+                <div>
+                    <form action="" method="get"></form>
+                    <tr>
+                        <td>
+                            <select title="Product item" name="Product item" id="Product item" ,
+                                placeholder="Example:PET film" autofocus>
+                                <option value="PET film">PET film</option>
+                                <option value="Reflective film">Reflective film</option>
+                                <option value="Plotter film">Plotter film</option>
+                                <option value="Printing Ink">Printing Ink</option>
+                            </select>
+                            <input type="text" id="addNewProduct" placeholder="輸入欲新增品項">
+                        </td>
+                        <td>
+                            <select title="Product code" name="Product code" id="Product code" ,
+                                placeholder="Example:HM-610" autofocus>
+                                <optgroup label="Printing film">
+                                    <option value="HM-610">HM-610</option>
+                                </optgroup>
+                                <optgroup label="Plotter film">
+                                    <option value="MN0101A">MN0101A</option>
+                                </optgroup>
+                                <optgroup label="Printing Ink">
+                                    <option value="C2008T">C2008T</option>
+                                </optgroup>
+                            </select>
+                            <input type="text" id="addNewProduct2" placeholder="輸入欲新增品項">
+                        </td>
+                        <td>
+                            <select title="Specification" name="Spec" id="Spec" , placeholder="Example:48cm x 300M"
+                                autofocus>
+                                <option value="48cm x 300M">48cm x 300M</option>
+                            </select>
+                            <input type="text" id="addNewProduct3" placeholder="輸入欲新增品項">
+                        </td>
+                        <td><input type="number" name="Quantity" id="Quantity" placeholder="XXX" required></td>
+                        <td><input type="number" name="Selling price" id="Selling price" placeholder="XXX" required>
+                        </td>
+                        <td><input type="number" name="Material cost" id="Material cost" placeholder="XXX" required>
+                        </td>
+                        <td><input type="number" name="Freight cost" id="Freight cost" placeholder="XXX" required></td>
+                        <td><input type="number" name="Commission cost" id="Commission cost" placeholder="XXX" required>
+                        </td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+        <span>
+            <input type="date" class="date" name="date" id="date" placeholder="Date" onfocus="(this.type='date')">
+            <textarea class="note" id="note" cols="10" rows="1" placeholder="輸入備註"></textarea>
+            <button class="button button1" id="addedBtn" onclick="profitline()">儲存</button>
+            <button class="button button2" id="deletedBtn">刪除最新</button>
+            <button class="button button1" id="addNew" onclick="addNew()">新增Item</button>
+            <button class="button button2" id="deleteLast" onclick="deleteLast()">刪除Item</button>
+            <button class="button button1" id="addNew2" onclick="addNew2()">新增Code</button>
+            <button class="button button2" id="deleteLast2" onclick="deleteLast2()">刪除Code</button>
+            <button class="button button1" id="addNew3" onclick="addNew3()">新增Spec</button>
+            <button class="button button2" id="deleteLast3" onclick="deleteLast3()">刪除Spec</button>
+            <p class="profit" id="profit">此訂單利潤為:</p>
+        </span>
+        <div class="list" id="list">
+            <div class="item">
+                <fieldset>
+                    <legend>Record</legend>
+                    <div>
+                        <p>內容:</p>
+                        <p>時間:</p>
+                        <p>此訂單利潤為:</p>
+                        <p>備註:</p>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="/Product Analysis/ProfitAnalysisForm.js"></script>
+</body>
+
+</html>
+
+
+
+

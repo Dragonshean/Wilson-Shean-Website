@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+/*頁面Banner設定*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0%;
+}
+
+/*頁面連結設定*/
+.page-group-1 {
+  background-color: #32313d;
+  font: 700 2rem 'Montserrat';
+  border: none;
+  color: white;
+  padding: 30px  55px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+.page-group-1:hover {
+  background-color: #129b12;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  margin-left: auto;
+  background: url('../image/cat/cat-1.png');
+  animation: glitch 3.5s infinite steps(1);
+}
+
+@keyframes logo{
+  0%, 100%{
+      background: url('../image/cat-1.png');
+      background-size: cover;
+  }
+
+  87.5%{
+      background: url('../image/cat-2.png');
+      background-size: cover;
+      opacity: 1;
+  }
+
+  90%{
+      background: url('../image/cat-3.png');
+      background-size: cover;
+      opacity: 0;
+  }
+
+  92.5%{
+      background: url('../image/cat-4.png');
+      background-size: cover;
+      opacity: 1;
+  }
+
+  95%{
+    background: url('../image/cat-5.png');
+    background-size: cover;
+    opacity: 0;
+  } 
+
+  97.5%{
+  background: url('../image/cat-6.png');
+  background-size: cover;
+  opacity: 1;
+  }
+
+}
+
+
+/*標題文字*/
+#Heading {
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    font: 700 2rem 'Montserrat';
+    width: 1375px;
+  }
+
+
+/*表格設定*/
+table, th, td {
+  font-family: Verdana;
+  border: 1px solid black;
+  border-style:solid;
+  border-color: #ff794d;
+  width: 100%
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/*選項設定*/
+select {
+  width:170px
+}
+
+/*頁面連結文字設定*/
+/* a:link {
+  color: green;
+  font-family: Verdana;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(0, 0, 0);
+  font-family: Verdana;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+  font-family: Verdana;
+  padding: 1px;
+  background-color: rgb(0, 69, 15);
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  font-family: Verdana;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+
+/*按鍵設定*/
+.button1,.button2 {
+  padding: 5px;
+  width: 80px;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+  background-color: #dddddd;
+  font-family: Tahoma;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button1{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+.button2{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #e33e3e;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #268ed3;
+}
+.button1:active, .button2:active {
+  background-color: #ff6c6c;
+  box-shadow: 0 2px rgb(0, 0, 0);
+  transform: translateY(2px);
+}
+.date{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #82135b;
+}
+.note{
+  border: 2px solid #03a000;
+}
+

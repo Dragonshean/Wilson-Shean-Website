@@ -1,0 +1,26 @@
+/*標題文字*/
+#Heading {
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    font: 700 2rem 'Montserrat';
+  }
+/*頁面連結設定*/
+.app .page-group .page-group-1 {
+  background-color: #32313d; /* Green */
+  font: 700 2rem 'Montserrat';
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.app .page-group .page-group-1:hover {
+  background-color: #129b12;
+}

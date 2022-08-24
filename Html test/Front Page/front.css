@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+/*整體背景*/
+body {
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #151320;
+}
+
+/*背景影片 */
+.backgrond-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+@media (min-aspect-ratio: 16/9 ){
+   .backgrond-video{
+        width: 100%;
+        height: auto;
+   } 
+}
+@media (max-aspect-ratio: 16/9 ){
+    .backgrond-video{
+         width: auto;
+         height: 100%;
+    } 
+ }
+
+/*登入面板*/
+.main {
+    position: absolute;
+    top: 135px;
+    text-align: center;
+    color: #ffffffd5;
+    width: 400px;
+    height:220px;
+    padding-top: 30px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3),
+                inset 3px 3px 3px rgba(0, 0, 0, .2);
+}
+/*登入面板-標題*/
+.main h1 {
+    color: #ffffff;
+    font: 700 2rem 'Montserrat';
+    font-size: 34px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+.main h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+/*登入面板-邊框圖示*/
+form .form-control{
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 25px;
+}
+/*登入面板-輸入設定*/
+form .form-control input{
+    width: 165px;
+    height: 40px;
+    padding-left: 12px;
+    background: transparent;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+/*登入面板-輸入圖示*/
+form .form-control i {
+    color: #fff;
+    font-size: 18px;
+}
+/*Login 圖示設定*/
+form .login{
+    cursor: pointer;
+    width: 120px; 
+    height: 30px;
+    color: #fff;
+    border-radius: 8px;
+    font: 700 2rem 'Montserrat';
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: #ff2c4f;
+    transition: .4s;
+}
+/*Login 鼠標浮空效果*/
+form .login:hover {
+    background: #fe607a;
+}
+/*Or login with*/
+.main .login-with p {
+    color: #ffffff;
+    font: 700 2rem 'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+/*Login With*/
+.main .login-with span {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 10px;
+    border-radius: 50%;
+    transition: all .4s;
+}
+/*facebook 圖示*/
+.fa-facebook-f {
+    background: #004c7b;
+}
+/*facebook 浮空*/
+.fa-facebook-f:hover {
+    background: #1f8dd1;
+}
+/*Instagram 圖示*/
+.fa-instagram {
+    background: #eb1f5c;
+}
+/*Instagram 浮空*/
+.fa-instagram:hover {
+    background: #790326;
+}
+/*twitter 圖示*/
+.fa-twitter {
+    background: #1d9ff0;
+}
+/*twitter 浮空*/
+.fa-twitter:hover {
+    background: #8dd2fd;
+}
+/*彩色邊框*/
+.box {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    background: #151320;
+    font: 700 2rem 'Montserrat';
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+/*彩色邊框-動畫*/
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 8px;
+    background: linear-gradient(
+        45deg, #ffff00, #00ff00,#ff0000, #0099ff, #001aff, #a200ff, #ff0055, 
+        #a200ff, #001aff, #0099ff, #00ff00, #ff0055, #ff0000, #ffff00 
+    );
+    background-size: 300%;
+    animation: border 12s linear infinite;
+}
+
+.box::after {
+    filter: blur(50px);
+}
+/*彩色邊框-動畫變化設定*/
+@keyframes border {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 200%;
+    }
+}
+/*左側龍圖案-動畫變化設定*/
+.glitch {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 60px;
+    width: 250px;
+    height: 150px;
+    background: url('./image/Dragon.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    animation: glitch 3.5s infinite steps(1);
+}
+/*左側龍圖案-動畫變化設定*/
+@keyframes glitch{
+    0%, 100%{
+        background: url('./image/Dragon.jpg');
+        background-size: cover;
+    }
+
+    92.5%{
+        background: url('./image/glitch-Dragon-1.png');
+        background-size: cover;
+        opacity: 1;
+    }
+
+    95%{
+        background: url('./image/glitch-Dragon-2.png');
+        background-size: cover;
+        opacity: 0;
+    }
+
+    97.5%{
+        background: url('./image/glitch-Dragon-3.png');
+        background-size: cover;
+        opacity: 1;
+    }
+
+}
+
