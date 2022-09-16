@@ -1,3 +1,4 @@
+//登入方式-1
 
 // //登入畫面
 // let userName = 'dragonshean';
@@ -39,3 +40,23 @@
 // })
 
 
+//登入方式-2
+
+
+
+
+
+
+
+function Login(){
+    let userName = document.getElementById('userName');
+    let passWord = document.getElementById('passWord');
+    if (userName == 'dragonshean' &&  passWord == 84453842){
+        self.location = 'ProfitAnalysisForm.html'
+        alert ('登入成功')
+        return false
+    }else {
+        alert('登入失敗, 請離開')
+        location.replace('https://reurl.cc/qNkEdD')
+    }
+}

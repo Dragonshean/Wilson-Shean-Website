@@ -12,37 +12,39 @@
 </head>
 
 <body>
-    <div>
-        <video autoplay loop muted plays-inline class="background-video"><!--登入畫面-背景影片-->
-            <source src="/front/video/Space Free Stock Footage [720p].mp4" type="video/mp4">
-        </video>
-    </div>    
-    <div class="box">
-        Welcome to my Page
-    </div>    
-    <div class="main">
-        <h1>Login Form</h1>
-        <form>
-            <div class="form-control">  <!--登入畫面-帳號輸入-->
-                <i class="fas far fa-user"></i>
-                <input id="userName" type="text" placeholder="Username">
-            </div>
-            <div class="form-control">  <!--登入畫面-密碼輸入-->
-                <i class="fas fa-lock"></i>
-                <input id="passWord" type="password" placeholder="Password">
-            </div>
-            <input class="login" type="submit" id="login" value="Login">
-        </form>
-        <div class="login-with"> <!--登入畫面下方,三個額外登入方式-->
-            <p>Or login with</p>
-            <span class="fab fa-facebook-f"></span>
-            <span class="fab fa-instagram"></span>
-            <span class="fab fa-twitter"></span>
+    <div class="Frontpage">
+        <div class="background">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted plays-inline class="background-video"><!--登入畫面-背景影片-->
+                <source src="/front/video/Space Free Stock Footage [720p].mp4" type="video/mp4">
+            </video>
+        </div>     
+        <div class="box">
+            <p>Welcome to Online Tools</p> 
+            <div class="glitch"></div>
+        </div>   
+        <div class="main">
+            <h1>Login Below</h1>
+            <form>
+                <div class="form-control">  <!--登入畫面-帳號輸入-->
+                    <i class="fas far fa-user"></i>
+                    <input id="userName" type="text" placeholder="Username">
+                </div>
+                <div class="form-control">  <!--登入畫面-密碼輸入-->
+                    <i class="fas fa-lock"></i>
+                    <input id="passWord" type="password" placeholder="Password">
+                </div>
+                <input class="login" type="submit" id="login" value="Login" onclick="Login()">
+            </form>
+            <!-- <div class="login-with"> 登入畫面下方,三個額外登入方式 
+                <p>Or login with</p>
+                <span class="fab fa-facebook-f"></span>
+                <span class="fab fa-instagram"></span>
+                <span class="fab fa-twitter"></span>
+            </div> -->
         </div>
     </div>
-    <div class="glitch"></div>
-
-    <script src="./FrontPage.js"></script>
+    <script src="FrontPage.js"></script>
 </body>
 
 </html>
