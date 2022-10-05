@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mainpage.css">
+    <link rel="icon" type="image/dragon-icon" href="/Favicon/LOGO/favicon.ico">
+    <!-- 字型1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Anek+Telugu&family=DynaPuff&family=Fredoka+One&family=Ranchers&family=Timmana&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f76cacc7eb.js" crossorigin="anonymous"></script>
+    <title>Dragon Company Page</title>
+</head>
+
+<body>
+    <!---------------------------------------- 首頁第一區塊 --------------------------------------------->
+    <section class="header">
+        <div class="background">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted plays-inline class="background-video">
+                <!--登入畫面-背景影片-->
+                <source src="/front/video/GoPro HERO6_ This Is the Moment in 4K.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav>
+            <a href="Mainpage.htm"><img src="/image/logo.png" class="mainPageLogo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Mainpage.htm">HOME</a></li>
+                    <li><a href="Aboutme.htm">ABOUT</a></li>
+                    <li><a href="Achievement.htm">ACHIEVEMENT</a></li>
+                    <li><a href="OnlineTools.htm">ONLINE TOOLS</a></li>
+                    <li><a href="Contactme.htm">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="bounce-top">
+            <div class="bounce">
+                <button>W</button><button class="A">e</button>
+                <button class="B">l</button><button class="C">c</button><button class="D">o</button><button
+                    class="E">m</button><button class="F">e</button>
+                <button class="G">T</button><button class="H">o</button><button class="I">M</button><button
+                    class="J">y</button>
+                <button class="K">P</button><button class="L">a</button><button class="M">g</button><button
+                    class="N">e</button>
+            </div>
+        </div>
+        <div class="text-box">
+            <p>I'm Wilson Shean, This page is my side project.
+            </p>
+            <a href="Aboutme.htm" class="about-btn">See more about me</a>
+        </div>
+        <div class="featured">
+            <p>Video featured by GoPro HERO6</p>
+        </div>
+    </section>
+    <!---------------------------------------- 首頁第二區塊 --------------------------------------------->
+    <section class="work-experience">
+        <h1>Work Experiences</h1>
+        <p>My Work Experiences</p>
+        <div class="row">
+            <div class="work-plate" id="reveal">
+                <h2>Hauming Import&Export Co., Ltd.</h2>
+                <h3>New Taipei City, Taiwan</h3>
+                <h3>03/2018 - Present</h3>
+                <p class="job-title">Oversea Sales Representative</p>
+                <p class="job-info">A Textile industry company with 150 to 200 staffs, branches in China, Vietnam, Sri
+                    Lanka, and Indonesia.</p>
+                <p class="job-area">Sales areas include East Asia, Southeast Asia, South Asia, South Africa, Europe.</p>
+                <ul>Achievements
+                    <li>Fulfill total NT$ 22.8 million business orders, achieved a 200% increase in business orders in
+                        fiscal 2021 compared to fiscal 2020.</li>
+                    <li>Successfully explore 4 new overseas customers with orders each month.</li>
+                    <li>Create a 20% - 300% of the total actual profits from multiple products.</li>
+                    <li>Have 85 oversea clients from different countries, such as China, Vietnam, Cambodia, Thailand,
+                        Bangladesh, India, Indonesia, Sri Lanka, Malaysia, South Africa, Austria, Italy, Slovenia,
+                        Poland, United Kingdom.</li>
+                    <li>Successfully arrange and held international exhibition for 12 times.</li>
+                    <li>Complimented by Malaysia customer with a highest grade "A" in overall supplier performance
+                        rating.</li>
+                    <li>Achieved and maintained a long-term purchase orders for total 165 thousand USD$ since 2021.</li>
+                </ul>
+            </div>
+            <div class="work-plate" id="reveal2">
+                <h2>Evermaster Co., Ltd. </h2>
+                <h3>Taipei, Taiwan</h3>
+                <h3> 07/2017 - 02/2018</h3>
+                <p class="job-title">Digital Marketing Assistant</p>
+                <p class="job-info">A logistic company with retail business, 50 to 100 staffs, with branches in
+                    Shanghai, Guangzhou, Zhongshan, China.</p>
+                <p class="job-area">Sales areas only in Asia</p>
+                <ul>Tasks
+                    <li>Conducted research and analyzed data to identify and define target buyers.</li>
+                    <li>Learned to promote products to China customers. Provided professional Food Microorganism
+                        knowledge.</li>
+                    <li>Increased the customer satisfaction rate by 20% by improving the customer service.</li>
+                    <li>Improved the communication with the Marketing department to better understand the competitive
+                        position.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- 首頁第三區塊 --------------------------------------------->
+    <hr>
+    <section class="achievement">
+        <h1>Sales Achievement</h1>
+        <p>My 3 Years Sales Chart</p>
+        <div class="row">
+            <div class="chart-plate">
+                <h3>Year on Year-Sales Growth</h3>
+                <img src="/Main page Data Analysis/YOY-Sales Growth.png">
+            </div>
+            <div class="chart-plate">
+                <h3>Benefits-Year on Year</h3>
+                <img src="/Main page Data Analysis/Benefits-YoY (1).png">
+            </div>
+            <div class="chart-plate">
+                <h3>Product Item sales%</h3>
+                <img src="/Main page Data Analysis/Product Item sales.png">
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- 首頁第四區塊 --------------------------------------------->
+    <hr>
+    <section class="education">
+        <div class="text-box-2">
+            <h1>Education</h1>
+            <h2>National Taiwan Ocean University</h2>
+            <h3>Graduated on 06/2017</h3>
+            <p>Bachelor of Science - Major in Food Science</p>
+            <p>Food Chemistry, Food Additives , Food processing, Food Microorganism</p>
+            <ul>Project:
+                <li>Counseling the HACCP (Hazard Analysis and Critical Control Points) proposal for the Frozen Food
+                    Company
+                    <br>(Company: Champion Refrigerant Foods Co., Ltd. Product: Nagasaki Cake)
+                </li>
+            </ul>
+            <ul>Extracurricular Activities:
+                <li>The leader of college volleyball team (won the second place in the college volleyball competition)
+                </li>
+                <li>The Innovation design competition (Played the role of team CEO, won the third place of the college
+                    competition)
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!---------------------------------------- 首頁第五區塊 --------------------------------------------->
+    <hr>
+    <section class="skill">
+        <h1>Skills</h1>
+        <p>My Personal Skills</p>
+        <p>Hover to check</p>
+        <div class="row">
+            <div class="skill-plate">
+                <img src="/image/Language.jpg">
+                <div class="layer-1">
+                    <ul>
+                        <li>
+                            <h3>English - Fluent</h3>
+                        </li>
+                        <li>
+                            <h3>Japanese - intermediate</h3>
+                        </li>
+                        <li>
+                            <h3>German - Beginner</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-plate">
+                <img src="/image/coding.jpeg">
+                <div class="layer-2">
+                    <ul>
+                        <li>
+                            <h3>HTML5</h3>
+                        </li>
+                        <li>
+                            <h3>CSS, SASS, SCSS</h3>
+                        </li>
+                        <li>
+                            <h3>Javascript</h3>
+                        </li>
+                        <li>
+                            <h3>SQL, MySQL</h3>
+                        </li>
+                        <li>
+                            <h3>Node.js</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-plate">
+                <img src="/image/graphic-design-tools.jpeg">
+                <div class="layer-3">
+                    <ul>
+                        <li>
+                            <h3>Adobe Premiere CC</h3>
+                        </li>
+                        <li>
+                            <h3>Adobe Illustrator CS6</h3>
+                        </li>
+                        <li>
+                            <h3>PhotoShop</h3>
+                        </li>
+                        <li>
+                            <h3>PowerDirector</h3>
+                        </li>
+                        <li>
+                            <h3>Figma, SVGator</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- 首頁第五區塊 --------------------------------------------->
+    <hr>
+    <section class="interests">
+        <h1>Interests</h1>
+        <p>My Personal Interests</p>
+        <div class="row">
+            <div class="interests-plate">
+                <img src="/image/surfing.jpeg">
+                <h3>Surfing</h3>
+                <p class="interest-text">I have been surfing for 2 years.</p>
+            </div>
+            <div class="interests-plate">
+                <img src="/image/parachuting.JPG">
+                <h3>Skydiving</h3>
+                <p class="interest-text">I served in the Army Special Forces and parachuted 12 times.</p>
+            </div>
+            <div class="interests-plate">
+                <img src="/image/weight training.jpg">
+                <h3>Weight Training & Cardio</h3>
+                <p class="interest-text">I have been exercising for over 10 years</p>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------- Call To Action --------------------------------------------->
+    <section class="cta">
+        <h1>Interview with Wilson Shean For more Informations<br>Anywhere From The World</h1>
+        <a href="/Main_Page/Contactme.htm" class="about-btn">CONTACT ME</a>
+    </section>
+    <!---------------------------------------- Footer --------------------------------------------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>Adapted quickly to challenges and changing environments.<br>Detailed oriented versed in balancing priorities
+            and
+            meeting deadlines under pressure.<br>Excellent team player with effective communication skills and ability
+            to
+            create cohesion.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/wilsonshean" target="_blank"><i class="fa fa-facebook"
+                    title="https://www.facebook.com/wilsonshean"></i></a>
+            <a href="https://www.instagram.com/dragonshean" target="_blank"><i class="fa fa-instagram"
+                    title="https://www.instagram.com/dragonshean"></i></a>
+            <a href="https://www.linkedin.com/in/wilson-shean" target="_blank"><i class="fa fa-linkedin"
+                    title="https://www.linkedin.com/in/wilson-shean"></i></a>
+        </div>
+        <p><i class="fa-regular fa-copyright"></i> 2022 DragonShean Company Unlimited. All rights reserved.</p>
+        <p>Created by Wilson Shean.</p>
+    </section>
+
+
+
+    <script src="/Main_Page/Mainpage.js"></script>
+</body>
+
+</html>

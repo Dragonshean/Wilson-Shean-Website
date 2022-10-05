@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*--------------------上層橫幅區域-------------------*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'DynaPuff', cursive;
+}
+/*整體-背景設定 */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;
+}
+/*背景覆蓋 */
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2e2e2e;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+/*背景影片 */
+.background-video {
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/*背景影片- */
+@media (max-aspect-ratio: 16/9) {
+    .background-video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .background-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*--------------------橫幅排版-----------------*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/*--------------------橫幅-LOGO設定-----------------*/
+.header .mainPageLogo {
+    width: 200px;
+}
+/*--------------------橫幅-右上排版-----------------*/
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+/*--------------------橫幅-右上標題設定-----------------*/
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/*--------------------橫幅-右上連結設定-----------------*/
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*--------------------橫幅-右上標題變化設定-----------------*/
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #04e1f5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+/*------------------ 自我介紹文字設定------------------ */
+.bounce-top {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    top: 30%;
+}
+.bounce {
+    border: none;
+    outline: none;
+    font-size: 0%;
+    position: absolute;
+    left: 280px;
+    top: 35%;
+}
+.bounce button {
+    font-size: 70px;    
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'DynaPuff', cursive;
+}
+.A { /*e*/
+    top: 0px;
+    left: 55px;
+    position: absolute;
+}
+.B { /*l*/
+    top: 0px;
+    left: 100px;
+    position: absolute;
+}
+.C { /*c*/
+    top: 0px;
+    left: 125px;
+    position: absolute;
+}
+.D { /*o*/
+    top: 0px;
+    left: 165px;
+    position: absolute;
+}
+.E { /*m*/
+    top: 0px;
+    left: 206px;
+    position: absolute;
+}
+.F { /*e*/
+    top: 0px;
+    left: 270px;
+    position: absolute;
+}
+.G { /*T*/
+    top: 0px;
+    left: 340px;
+    position: absolute;
+}
+.H { /*o*/
+    top: 0px;
+    left: 380px;
+    position: absolute;
+}
+.I { /*M*/
+    top: 0px;
+    left: 450px;
+    position: absolute;
+}
+.J { /*y*/
+    top: 0px;
+    left: 500px;
+    position: absolute;
+}
+.K { /*P*/
+    top: 0px;
+    left: 570px;
+    position: absolute;
+}
+.L { /*a*/
+    top: 0px;
+    left: 610px;
+    position: absolute;
+}
+.M { /*g*/
+    top: 0px;
+    left: 650px;
+    position: absolute;
+}
+.N { /*e*/
+    top: 0px;
+    left: 690px;
+    position: absolute;
+}
+.bounce button:hover {
+    color: #5afa32;
+    animation: animate 0.9s;
+}
+@keyframes animate {
+    25%{
+        transform: scale(0.8, 1.1);
+    }
+    50%{
+        transform: scale(1.3, 0.6);
+    }
+    75%{
+        transform: scale(0.6, 1.3);
+    }
+}
+.text-box {
+    width:90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #fff;
+}
+.text-box p:hover {
+    color: #5afa32;
+    animation: animate2 1s;
+}
+@keyframes animate2 {
+    25%{
+        transform: scale(0.8, 1.1);
+    }
+    50%{
+        transform: scale(1.3, 0.6);
+    }
+    75%{
+        transform: scale(0.6, 0.9);
+    }
+}
+
+
+/* -----------------------關於我按鈕設定--------------------------- */
+.about-btn {
+    display: inline block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.about-btn:hover {
+    border: 1px solid #f00773;
+    background: #f00773;
+    transition: 1s;
+}
+nav .fa-solid{
+    display: none;
+}
+.featured {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+/*--------------------------------- 手機面板顯示設定------------------------------------ */
+@media(max-width: 700px){
+    .mainPageLogo {
+        width: 5px;
+    }
+    .bounce button {
+        font-size: 40px;
+    }
+    .text-box p {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        background: #f00773;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/*-----------------------------------Work Experiences ------------------------------------ */
+.work-experience {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-family: 'Fredoka One', cursive;
+}
+.work-experience h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+.work-experience p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+/* work plate 設定 */
+.work-experience .row {
+    margin-top: 5%;
+    display: block;
+    justify-content: space-between;
+}
+.work-experience .active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.work-plate {
+    flex-basis: 31%;
+    background: #9ef552;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transform: translateX(1200px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.work-plate:hover {
+    box-shadow: 0 0 30px 0px rgba(244, 7, 7, 0.737);
+}
+.work-experience h2 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.work-plate .job-title {
+    color: rgb(72, 11, 176);
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.work-plate .job-info, .work-plate .job-area {
+    color: rgb(251, 50, 23);
+    font-size: 18px;
+    font-weight: 300;
+}
+.work-plate ul {
+    text-align: center;
+    font-size: 19px;
+    line-height: 42px;
+    padding: 10px;
+}
+.work-plate li {
+    text-align: left;
+    font-size: 19px;
+    padding: 5px;
+    font-weight: 100;
+}
+@media(max-width: 700px){
+    .work-experience h1 {
+        color: #fff;
+    }
+}
+
+
+/* -------------------------------Sales Achievement---------------------------------- */
+/* 標題設定 */
+.achievement {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    font-family: 'Fredoka One', cursive;
+}
+.achievement h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+.achievement p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 22px;
+    padding: 10px;
+}
+/* sales chart 設定 */
+.achievement .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.chart-plate {
+    flex-basis: 31%;
+    background: #f0c7c7;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.achievement h3 {
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.chart-plate img {
+    width: 260px;
+}
+.chart-plate img:hover {
+    transform: scale(3);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.chart-plate .achieve-1:hover {
+    transform: translate(140px, 0px) scale(3);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.chart-plate .achieve-3:hover {
+    transform: translate(-140px, 0px) scale(3);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.chart-plate .achieve-4:hover {
+    transform: translate(140px, 0px) scale(3);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.chart-plate .achieve-6:hover {
+    transform: translate(-140px, 0px) scale(3);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .achievement h1 {
+        color: #fff;
+    }
+}
+/* -------------------------------Education------------------------------------------------------ */
+/* 標題設定 */
+.education {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(57, 61, 78, 0.7), rgba(57, 61, 78, 0.7)),url(/image/NTOU\ pic.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Verdana;
+    position: relative;
+}
+.text-box-2 {
+    width:90%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box-2 h1 {
+    font-size: 52px;
+    padding-bottom: 30px;
+}
+.text-box-2 h2 {
+    font-size: 42px;
+    padding-bottom: 30px;
+}
+.text-box-2 h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.text-box-2 p {
+    margin: 10px 0 15px;
+    font-size: 20px;
+}
+.text-box-2 ul {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.text-box-2 li {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 180px;
+}
+@media (max-width: 700px) {
+    .education {
+        position: relative;
+        background-position: 30% 0;
+    }
+    .text-box-2 {
+        width:90%;
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        position: absolute;
+        font-size: 10px;
+    }
+    .text-box-2 ul {
+        display: none;
+    } 
+}
+/* -------------------------------Skill----------------------------------------------------------- */
+/* 整體字體排版設定 */
+.skill {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Acme', sans-serif;
+}
+/* 標題字體設定 */
+.skill h1 {
+    font-size: 36px;
+    font-weight: 300;
+}
+.skill p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 22px;
+    padding: 10px;
+}
+/* skill 三個版面排版設定 */
+.skill .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+/* skill 三個版面 位置及面板設定 */
+.skill-plate {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+/* 面板圖片設定 */
+.skill-plate img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/*  面板展示圖層設定  */
+.layer-1, .layer-2, .layer-3 {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+/* 面板內字體間距設定 */
+.layer-1 ul li, .layer-2 ul li, .layer-3 ul li {
+    padding: 10px;
+}
+/* ----------- 面板1   最左面板展示字體設定 --------------- */
+.layer-1 h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-200%);
+    position: absolute;    
+    opacity: 0;
+    transition: 0.5s;
+}
+/* 最左展示字體  移動設定 */
+.layer-1:hover h3 {
+    transform: translateX(-50%);
+    opacity: 1;
+}
+/* 面板後顯示圖層顏色設定 */
+.layer-1:hover {
+    background: rgba(226,0,0,0.7);
+}
+/* ----------- 面板2   中間面板展示字體設定 -------------- */
+.layer-2 h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -700%);
+    position: absolute;    
+    opacity: 1;
+    transition: 0.5s;
+}
+/* 中面板展示字體  移動設定 */
+.layer-2:hover h3 {
+    transform: translateX(-50%);
+    opacity: 1;
+}
+/* 面板後顯示圖層顏色設定 */
+.layer-2:hover {
+    background: rgba(4, 12, 133, 0.7);
+}
+/* ----------- 面板3   最右面板展示字體設定 ---------------- */
+.layer-3 h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(200%);
+    position: absolute;    
+    opacity: 1;
+    transition: 0.5s;
+}
+/* 最右展示字體  移動設定 */
+.layer-3:hover h3 {
+    transform: translateX(-50%);
+    opacity: 1;
+}
+/* 面板後顯示圖層顏色設定 */
+.layer-3:hover {
+    background: rgba(18, 125, 2, 0.7);
+}
+
+/* -------------------------------------------Interests------------------------------------------------ */
+
+.interests {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Timmana', sans-serif;
+}
+.interests h1 {
+    font-size: 64px;
+    font-weight: 300;
+}
+.interests p {
+    color: #777;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 22px;
+    padding: 10px;
+}
+.interests .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Timmana', sans-serif;
+} 
+.interests-plate {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.interests-plate img {
+    width:100%;
+    border-radius: 10px;
+}
+.interests-plate p {
+    padding: 0;
+}
+.interests-plate h3 {
+    margin-top: 16px;
+    margin-bottom: 13px;
+    text-align: left;
+    font-size: 30px;
+}
+.interests-plate h3:hover {
+    -webkit-text-stroke: 2px rgba(253, 42, 74, 0.941);
+    color: rgb(250, 251, 253);
+}
+
+/* --------------------------------Call To Action--------------------------------------------- */
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('/image/Interview.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    font-family: 'Tahoma';
+}
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media (max-width: 700px) {
+    .cta h1 {
+        font-size: 20px;
+    }
+}
+/* -------------------------------------------Footer------------------------------------------------ */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #263132;
+    color: #fff;
+    font-family: 'Anek Telugu', sans-serif;
+}
+.footer h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.footer p {
+    line-height: 1.5;
+}
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 35px;
+}
